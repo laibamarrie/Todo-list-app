@@ -23,7 +23,7 @@ function readTodos() {
   let index = 0;
   while (index < todos.length) {
     const item = todos[index];
-    console.log(`${chalk.cyan(index + 1)}. ${chalk.blue(item)}`);
+    console.log(`${chalk.cyanBright(index + 1)}. ${chalk.blue(item)}`);
     index++;
   }
 }
