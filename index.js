@@ -79,23 +79,24 @@ async function main() {
                 choices: ["Add", "Read", "Update", "Delete", "Exit"],
             },
         ]);
-        if (action.choice === "Add") {
-            await addTodo();
-        }
-        else if (action.choice === "Read") {
-            readTodos();
-        }
-        else if (action.choice === "Update") {
-            await updateTodo();
-        }
-        else if (action.choice === "Delete") {
-            await deleteTodo();
-        }
-        else if (action.choice === "Exit") {
-            condition = false;
-        }
-        else {
-            console.log("Invalid choice. Please try again.");
+        switch (action.choice) {
+            case "Add":
+                await addTodo();
+                break;
+            case "Read":
+                readTodos();
+                break;
+            case "Update":
+                await updateTodo();
+                break;
+            case "Delete":
+                await deleteTodo();
+                break;
+            case "Exit":
+                condition = false;
+                break;
+            default:
+                console.log("Invalid choice. Please try again.");
         }
     }
 }
