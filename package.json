@@ -1,6 +1,6 @@
 {
   "name": "lima904-todos",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Manage your shopping list effortlessly with my intuitive app",
   "main": "index.js",
   "type": "module",

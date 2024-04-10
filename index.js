@@ -1,7 +1,17 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
 // Initialize an empty array to store shopping items
-let todos = [];
+let todos = [
+    "Body mist",
+    "Scrunchies",
+    "Tote bag",
+    "Rice",
+    "Shampoo",
+    "Foundation",
+    "jewelry",
+    "Shoes",
+];
 // Function to display all shopping items
 function readTodos() {
     console.log(chalk.bold.magenta("Your Shopping List:"));
